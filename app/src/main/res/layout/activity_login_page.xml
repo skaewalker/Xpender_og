@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical"
+    tools:context=".login_page">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="130dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:textStyle="bold"
+        android:id="@+id/name"
+        android:textSize="30dp"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_name"
+        android:layout_below="@+id/name"
+        android:hint="Enter your registered username"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:id="@+id/pass"
+        android:layout_below="@+id/edt_name"
+        android:textSize="30dp"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:inputType="textWebPassword"
+        android:id="@+id/edt_pass"
+        android:hint="Enter your password"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edt_pass"
+        android:text="LOGIN"
+        android:id="@+id/login_btn"
+        android:background="#FF9800"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_btn"
+        android:background="#FF9800"
+        android:text="SIGN UP IF YOU HAVE'NT REGISTERED YET"
+        android:id="@+id/non_btn"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout>
+</RelativeLayout>
